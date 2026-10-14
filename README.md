@@ -10,6 +10,9 @@
    ollama pull qwen3.5:2b
    ```
 
+Download Wav2Vec2 weights from https://drive.google.com/file/d/1YiAUoYLF9F8wZye-o1TPu6AcRAo_Z0t7/view?usp=sharing
+into `/checkpoints/`
+
 2. **Run the Demo**:
    Double-click `run_demo.command` in Finder!
    *(Or run `./start_demo.sh` from Terminal)*.
