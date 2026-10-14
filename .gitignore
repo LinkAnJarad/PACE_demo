@@ -1,0 +1,72 @@
+# ==============================================================================
+# Git Ignore for Predictive Processing Demo
+# ==============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.class
+*.so
+*.dylib
+*.dll
+*.egg-info/
+/build/
+/dist/
+
+# Virtual environment & package managers
+.venv/
+venv/
+env/
+.uv-python/
+.uv-cache/
+uv-sync*.log
+
+# Environment variables & secrets (keep .env.example)
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Temporary media recordings and audio files
+*.tmp
+*.temp
+temp/
+tmp/
+*.wav
+*.webm
+*.mp4
+
+# Operating system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE & Editor artifacts
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs and runtime traces
+*.log
+logs/
+outputs/
+interaction_logs.jsonl
+
+# Node / Frontend development
+frontend/node_modules/
+frontend/.pnpm-store/
+frontend/dist-ssr/
+frontend/*.tsbuildinfo
+!frontend/dist/
+!frontend/dist/**
+
+checkpoints/wav2vec2_fold_1_best.pt

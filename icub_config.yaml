@@ -1,0 +1,38 @@
+vhacd:
+  use_vhacd: True
+  force_vhacd: False
+  force_vhacd_urdf: True
+robot_urdf_path: "iCub/full.urdf"
+gui:
+  standard: True
+  web: False
+tolerance:
+  joint: 1e-3
+end_effector: "r_hand"
+initial_joint_angles: {"r_shoulder_pitch": -34, "r_shoulder_roll": 30,
+                        "r_shoulder_yaw": 0, "r_elbow": 50, "r_wrist_prosup": 0,
+                        "r_wrist_pitch": 0, "r_wrist_yaw": 0, "l_shoulder_pitch": -34,
+                        "l_shoulder_roll": 30, "l_shoulder_yaw": 0, "l_elbow": 50,
+                        "l_wrist_prosup": 0, "l_wrist_pitch": 0, "l_wrist_yaw": 0,
+                        "torso_pitch": 0, "torso_roll": 0, "torso_yaw": 0}
+urdfs:
+  paths: [plane/plane.obj]
+  positions: [[-5, -5, -0.65]]
+  fixed: [True]
+  color: [[0.75, 0.75, 0.75]]
+skin:
+  use: False
+  radius: 0.01
+  num_cores: 0
+  skin_parts: []
+collision_tolerance: 0.001
+debug: True
+log:
+  log: False
+  period: 0.01
+simulation_step: 240
+self_collisions: True
+eyes:
+  l_eye: False
+  r_eye: False
+log_pose: False
