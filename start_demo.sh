@@ -29,6 +29,12 @@ if ! command -v uv &> /dev/null; then
 fi
 
 # 2. Check virtual environment & dependencies
+# Guard: If .venv was copied from Windows (contains Scripts instead of bin), remove it
+if [ -d ".venv/Scripts" ] && [ ! -d ".venv/bin" ]; then
+    echo "  [Notice] Found Windows .venv on macOS. Removing to build clean macOS environment..."
+    rm -rf .venv
+fi
+
 if [ ! -d ".venv" ]; then
     echo "  Initializing virtual environment and syncing dependencies via uv..."
     uv sync
